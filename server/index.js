@@ -5,8 +5,8 @@ import cors from 'cors';
 
 const app = Express();
 
-app.use(bodyParser.json({ limit: '30mb', extended: true }))
-app.use(bodyParser.urlencoded({ limit: '30mb', extended: true }))
+app.use(bodyParser.json({ limit: '30mb', extended: true }));
+app.use(bodyParser.urlencoded({ limit: '30mb', extended: true }));
 app.use(cors());
 
 const CONNECTION_URL = 'mongodb+srv://julhashtamim:julhashtamim987654@p300.sczrt.mongodb.net/?retryWrites=true&w=majority';
