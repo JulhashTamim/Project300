@@ -7,7 +7,7 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
-mongoose.connect("mongodb+srv://julhashtamim:julhashtamim987654@p300.sczrt.mongodb.net/?retryWrites=true&w=majority", 
+mongoose.connect('mongodb+srv://julhashtamim:julhashtamim987654@p300.sczrt.mongodb.net/?retryWrites=true&w=majority', 
 {
 	useNewUrlParser: true, 
 	useUnifiedTopology: true 
@@ -16,7 +16,7 @@ mongoose.connect("mongodb+srv://julhashtamim:julhashtamim987654@p300.sczrt.mongo
 .catch(console.error);
 
 
-//Models
+//models
 const Todo = require('./models/Todo');
 
 app.get('/todos', async (req, res) => {
